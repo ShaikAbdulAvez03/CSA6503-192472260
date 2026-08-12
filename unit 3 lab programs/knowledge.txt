@@ -1,0 +1,4 @@
+Artificial intelligence is a field of computer science.
+Machine learning is a part of artificial intelligence.
+Python is widely used for artificial intelligence.
+Deep learning uses neural networks.

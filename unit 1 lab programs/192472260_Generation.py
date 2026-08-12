@@ -1,14 +1,7 @@
 from transformers import pipeline
 
-qa = pipeline(
-    "question-answering",
-    model="distilbert-base-cased-distilled-squad"
-)
+generator = pipeline("text-generation", model="gpt2")
 
-context = "Artificial Intelligence is the simulation of human intelligence by machines."
+result = generator("Artificial Intelligence", max_length=50)
 
-question = "What is Artificial Intelligence?"
-
-result = qa(question=question, context=context)
-
-print(result["answer"])
+print(result[0]["generated_text"])

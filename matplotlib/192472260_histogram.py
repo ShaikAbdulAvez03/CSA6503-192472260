@@ -1,8 +1,7 @@
 import matplotlib.pyplot as plt
 
-x = [1, 2, 3, 4, 5]
-y = [10, 20, 15, 25, 30]
+marks = [65, 70, 75, 80, 85, 90, 95, 80]
 
-plt.plot(x, y)
-plt.title("Line Plot")
+plt.hist(marks, bins=5)
+plt.title("Histogram")
 plt.show()
